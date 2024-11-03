@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-website</title>
+
+</head>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(128, 128, 128,0.5), rgba(128, 128, 128,0.5)), url('vintage-pink-telephone-composition.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 90%;
+  margin: auto;
+  padding:35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width:100px;
+  cursor:pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+    color: black;
+  margin: 0 20px;
+  position:relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.navbar ul li a::after{
+  content:'';
+  height:3px;
+  width:0;
+  background:#009688;
+  position: absolute;
+  left:0;
+  bottom:-10px;
+  transition:0.5s;
+}
+.navbar ul li :hover::after{
+  width:100%;
+}
+.content{
+  width: 100%;
+  margin-top:10%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.content h2{
+  font-size: 45px;
+  margin-top:80px;
+    padding:40px;
+}
+.content p{
+  margin:25px auto;
+  line-height:25px;
+  padding:50px;
+    font-size:20px;
+}
+.map-container {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    height: 300px;
+    transform: translateY(-50%);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.map-container {
+    width: 400px;
+    height: 300px;
+    flex-shrink: 5;
+    margin-top:2%;
+}
+
+</style>
+
+<body>
+    <div class="banner">
+        <div class ="navbar">
+            <div class="logo-container">
+            <img src="logo2.png" class="logo" alt="logo">
+                </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="content">
+           <h2><u>Contact us:</u></h2>
+                        <p>Visit us at:<br> www.mustafa.com<br> Location: Karamalmi, Espoo, Finland.<br>Postal code: 04250<br>Email: mustafa.ahmad@metropolia.fi<br>Phone: +358 449302118</p>
+
+        </div>
+
+         <div class="map-container">
+                MAP:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.3854747833436!2d24.7559389767198!3d60.223998539088704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df797cfe43cbb%3A0xb99a2c26d4df39ff!2sMetropolia%20University%20of%20Applied%20Sciences%20-%20Karamalmi%20Campus!5e0!3m2!1sen!2sfi!4v1730659703647!5m2!1sen!2sfi"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>

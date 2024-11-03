@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home-website</title>
+
+
+</head>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing:border-box;
+}
+    body{
+
+
+    }
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(128, 128, 128,0.5), rgba(128, 128, 128,0.5)), url('blue-stationery-table.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 90%;
+  margin: auto;
+  padding:35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width:100px;
+  cursor:pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position:relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+  content:'';
+  height:3px;
+  width:0;
+  background:#009688;
+  position: absolute;
+  left:0;
+  bottom:-10px;
+  transition:0.5s;
+}
+.navbar ul li :hover::after{
+  width:100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top:12%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1{
+  font-size: 45px;
+  margin-top:80px;
+}
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #c1c4bc;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left:70px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-image {
+    background-color: #333;
+    color: #888;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.product-text {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+</style>
+
+<body>
+        <div class="content">
+           <h1><u>SERVICES</u></h1>
+        </div>
+
+    <div class="banner">
+        <div class ="navbar">
+            <div class="logo-container">
+            <img src="logo2.png" class="logo">
+                </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="product-container">
+                <div class="product-card">
+                    <h3>UI/UX Designer</h3>
+                    <div class="product-image">
+                        <img src="ui-ux.jpg" alt="ui">
+                    </div>
+                    <p class="product-text">A UI/UX developer is a specialized software developer who focuses on creating user interfaces for products, such as websites and mobile apps. They combine elements of graphic design, psychology,
+                        and engineering to create a product that looks good, easy and enjoyable to use.</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Javascript Developer</h3>
+                    <div class="product-image">
+                        <img src="Jv.jpg" alt="java-image">
+                    </div>
+                    <p class="product-text">A JavaScript developer creates and maintains online applications using the JavaScript programming language. They develop dynamic and interactive user interfaces,
+                        integrate business logic, and connect to back-end systems using HTML, CSS, and other technologies.</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Back-end Developer</h3>
+                    <div class="product-image"><img src="back-end.jpg" alt="full-stack"></div>
+                     <p class="product-text">Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites.
+                         They control everything you can see on a website, and are involved in data storage, security, and other server-side functions that you cannot see.</p>
+                </div>
+            <div class="product-card">
+                    <h3>Full stack developer</h3>
+                    <div class="product-image"><img src="fullstack.jpg" alt="full-stack"></div>
+                     <p class="product-text">A full-stack developer is a developer or an engineer who can build both the front end
+                         and the back end of a website or of an android or IOS. They are proficient in Key languages necessary for development such as JavaScript, Python, Ruby, and Java.</p>
+                </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
